@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="index.css" type="text/css"> 
+    <title>Filmler </title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="genel-kutu">
+            <div class="menu"> 
+                <ul>
+                    <li><a  href="index.html">Anasayfa</a></li>
+                    <li><a class="active" href="Filmler.html">Filmler</a></li>
+                    <li><a href="Diziler.html">Diziler</a></li>
+                    <li style="float:right"><a href="girisyap.html">Giriş yap</a></li>
+                    <li style="float:right"><a href="kayitol.html">Kayıt Ol</a></li>
+
+                  </ul>
+
+
+            </div> 
+        
+
+
+                <h6 style="margin-left:10px; color:#53b8ff;"> Filmler </h6>
+
+                <div class="icerik">
+
+                    <div class="kucukfilm"> <img src="img/parasite.webp"> </div>
+                    <div class="kucukfilm"> <img src="img/47meters.webp"> </div>
+                    <div class="kucukfilm"> <img src="img/tomjerry.webp"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/SiraDisi.webp"> </div>
+                    <div class="kucukfilm"> <img src="img/thedays.webp"> </div>
+                    <div class="kucukfilm"> <img src="img/theplatform.webp"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim1.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+                    <div class="kucukfilm"> <img src="img/kucukresim2.jpg"> </div>
+
+
+                    
+
+                 
+                    
+                </div>
+
+                <div class="footer">
+
+                  Ayşe Palut - Tüm hakları saklıdır. 
+
+                </div>
+           
+        </div>
+
+      
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("slider1");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000);    
+    }
+    </script>
+
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("slider2");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000);    
+    }
+    </script>

@@ -1,0 +1,427 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+    background-image: url('img/bg.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserrat",sans-serif;
+    width: 100%;
+    min-height: 100%;
+    font-size: 15px;
+    font-weight: 500 !important; /* Yazı kalınlığı */ 
+}
+
+.container {
+  
+    max-width: 1200px; /* Alanın maksimum genişliği */
+    margin: 0 auto;
+
+    
+}
+
+.genel-kutu {
+    width:100%;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+
+}
+
+.menu {
+    color:white;
+    border-bottom:3px solid #53b8ff;
+    width:100%;
+}
+
+.ust-film {
+    display: inline;
+}
+
+
+.ust-film-slider {
+    width:49%;
+    display: inline-block;
+    height:350px;
+    margin-left:0.60%;
+}
+
+.ust-film-slider img {
+    width:100%;
+}
+
+.icerik {
+    width:100%;
+    margin-top:1%;
+    display: block;
+    
+}
+
+.kucukfilm {
+
+  display: inline-flex;
+  margin-left:15px;
+  margin-bottom:15px;
+
+}
+
+.kucukfilm img {
+
+    width: 220px !important;
+    height:320px !important;
+}
+
+.kucukfilm:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.25); 
+    transition: transform .2s;
+}
+
+.footer {
+    border-top:3px solid #53b8ff;
+    padding:10px;
+    text-align:center;
+
+}
+
+/* Form Başlangıç */
+
+.girisyapform {
+  padding: 16px;
+width:50%;
+    margin:0 auto;
+}
+
+/* .girisyapform input[type=text] {
+    width:100%;
+    padding:5px 10px;
+    border:1px solid #ddd;
+    margin-bottom:10px;
+}
+
+.girisyapform input[type=password] {
+    width:100%;
+    padding:5px 10px;
+    border:1px solid #ddd;
+    margin-bottom:10px;
+}
+
+.girisyapform input[type=submit] {
+    width:100%;
+    padding:5px 10px;
+    border:1px solid #ccc;
+    margin-bottom:10px;
+    background-color: rgb(68, 139, 232);
+    color:#fff;
+}
+ */
+
+
+
+
+/* FORM Bitiş */
+
+
+/* Menü */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color:333;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.active {
+color: #53b8e4;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+ 
+
+  /* Menü Bitiş */
+  /* FİLM DETAYI BAŞLANGICI*/
+
+.filmdetayi{
+    width: 100%;
+ 
+}
+
+.fragmanvideo{
+    width: 80%;
+    margin-left: 10%;
+}
+
+  /* FİLM DETAYI BİTİŞİ*/
+
+
+  /* modal */
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* margin-left: 15%; */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(4 4 4 / 76%);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    width: 50%;
+  }
+
+  .golgelik {
+    background: rgba(255, 255, 255, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(255, 255, 255, .1) 40%, rgb(4 4 4 / 76%) 75%, rgb(4 4 4 / 76%) 100%) repeat scroll 0 0;    position: relative;
+    margin-top: -200px;
+    height: 197px;
+  }
+
+  .modal-content img{
+    width:100%;
+    height:300px;
+
+  }
+
+  .film-butonlar {
+    width:100%;
+    height:50px;
+    margin-top:-80px;
+    z-index: 1;
+    position: relative;
+    float: right;
+  }
+
+  .oynatbutton{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgb(4 4 4 / 76%);
+    border: none;
+    margin-top: 5px;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size:14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.oynatbtn{
+ text-decoration: none !important;
+ color:#000;
+  }
+
+.film-kucuk-butonlar-ekle {
+  margin-left: 10px;
+  font-size: 30px;
+  position: absolute;
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: 300;
+
+}
+
+.film-kucuk-butonlar-ekle:hover{
+color:#aaaaaa;
+cursor:pointer;
+
+}
+
+.film-kucuk-butonlar-begen {
+  margin-left: 47px;
+  font-size: 30px;
+  position: absolute;
+  display: inline-block;
+  margin-top: 3px;
+  font-weight: 300;
+
+}
+
+.film-kucuk-butonlar-begen:hover{
+color:#aaaaaa;
+cursor: pointer;
+
+}
+
+
+.film-kucuk-butonlar-sessiz {
+  font-size: 30px;
+  position: absolute;
+  display: inline-block;
+  margin-top: 3px;
+  font-weight: 300;
+  right:0;
+  margin-right:20px;
+
+
+}
+
+.film-kucuk-butonlar-sessiz:hover{
+color:#aaaaaa;
+cursor: pointer;
+
+}
+
+
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .film-aciklama {
+    width:97.5%;
+    background-color: rgb(39, 35, 35);
+    padding:10px;
+    float:right;
+  }
+
+
+  .film-aciklama-1 {
+    width:33%;
+    padding:10px;
+    float:right;
+  }
+
+    .film-aciklama-2 {
+    width:50%;
+    padding:10px;
+    float:left;
+  }
+
+  .film-aciklama-3 {
+    width:50%;
+    padding:10px;
+    float:left;
+  }
+
+
+  .alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    text-align:center;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+
+  .alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+  /* modal bitiş */
+
+  input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    color:#000;
+  }
